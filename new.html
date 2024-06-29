@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        background-color: #1f293a;
+        overflow: hidden;
+    }
+    div{
+      font-style: oblique;
+      font-weight: bolder;
+      font-size: 70px;
+    cursor: pointer;
+    text-shadow: 10px 10px 15px rgb(31, 150, 201);
+    animation: ali 3s ease-in 9.3s infinite;
+    }
+    #one{
+        position: relative;
+        top: -40px;
+        right: 270px;
+        font-size: 160px;
+        
+    }
+    @keyframes ali{
+        0%{opacity: 0;}
+        50%{opacity: 10;}
+        100%{opacity: 0;}
+    }
+    #two{
+        position: relative;
+        right: 380px;
+    }
+    #one::before{
+    content: '';
+    position:absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    background-color: #1f293a;
+    animation: hash 3s ease forwards;
+    animation-delay: 1s;
+}
+  @keyframes hash{
+    100%{
+        width: 0;
+    }
+  }
+  #two::before{
+    content: '';
+    position:absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    background-color: #1f293a;
+    animation: has 3s ease forwards;
+    animation-delay: 5s;
+}
+  @keyframes has{
+    100%{
+        width: 0;
+    }
+  }
+
+  @media only screen and (max-width:630px){
+    #one{
+      font-size: 100px;
+      margin-left: 200px;
+    }
+    #two{
+      font-size: 100px;
+      margin-bottom: 200px;
+      margin-left: 230px;
+    }
+  }
+    
+</style>
+<body>
+    <div>
+        <h1>
+           <pre>
+            <span id="one">Eid</span> 
+           <span id="two">MubaRak!</span> 
+           </pre>  
+        </h1>
+    </div>
+   </body>
+</html>
